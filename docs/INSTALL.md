@@ -258,10 +258,10 @@ first section, inline instance further down, fake Newsletter Block).
 - swtldesignco.squarespace.com/newsletter-sub-test (pre-release build, Oct 2026): signup,
   intro, close, header hide all confirmed.
 - Mock 7.1 page (`demo/index.html`): hero + inline, second signup after Back.
+- Released v1.0.0 (Oct 23, 2026); `@1` CDN links confirmed live.
 
 ## Open items
 
 - Confirm a **second** signup in one visit (after Back) on a live Newsletter Block. The
   plugin resets the block to its form state first; verified on the mock only.
 - Check header hide with the "scroll back" fixed header style and with a custom header.
-- Repo needs a `v1.0.0` tag before the `@1` CDN URLs resolve.
