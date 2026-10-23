@@ -1,0 +1,52 @@
+<!-- Waitlist — paste into a Code Block in the SAME Fluid Engine section as a native
+     Newsletter Block. Edit text only: side lines, prompt line, heading, messages.
+     Per-section toggles go on the first div as data-wl-* attributes (see docs/INSTALL.md),
+     e.g. data-wl-placement="inline"  data-wl-hide-header="false"  data-wl-share="off" -->
+<div class="wl" data-wl>
+  <div class="wl__lockup" aria-hidden="true">
+    <span class="wl__left"><span class="wl__prefix">Welcome to</span>Forma<span class="wl__pill">beta</span></span>
+    <span class="wl__right">A space to build <span class="wl__rot" data-wl-rotate="websites, apps, anything"></span></span>
+  </div>
+
+  <div class="wl__card">
+    <div class="wl__square">
+      <p class="wl__copy" aria-hidden="true" data-wl-words>Build me a website for my local cycling club with a weekly class schedule they can use to sign up</p>
+      <div class="wl__cta-wrap">
+        <button type="button" class="wl-cta" aria-haspopup="dialog" aria-expanded="false" data-wl-open>Join the waitlist</button>
+      </div>
+    </div>
+
+    <div class="wl__panel" role="dialog" aria-modal="true" aria-labelledby="wl-heading">
+      <div class="wl__content">
+        <div class="wl__message">
+          <h2 class="wl__heading" id="wl-heading" style="grid-area:1/1">Get early access</h2>
+          <div class="wl__success" aria-hidden="true">
+            <span class="wl__success-title">You're on the list.</span>
+            <span class="wl__success-body">We'll notify you at <span data-wl-email></span><br>when access opens.</span>
+          </div>
+          <p class="wl-sr" role="status" data-wl-status></p>
+        </div>
+
+        <div class="wl__stage">
+          <form class="wl__field" novalidate data-wl-form>
+            <input class="wl__input" id="wl-email" type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email" maxlength="254">
+            <button type="submit" class="wl__submit" aria-label="Submit">
+              <span class="wl__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg></span>
+              <span class="wl__spin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/></svg></span>
+            </button>
+            <span class="wl__check" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg></span>
+            <span class="wl__error" role="alert" data-wl-error></span>
+          </form>
+          <button type="button" class="wl__share" data-wl-share>
+            <span>Send to a friend</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="wl__back" aria-label="Back" data-wl-back><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+      <button type="button" class="wl__close" aria-label="Close" data-wl-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6l12 12"/></svg></button>
+      <div class="wl__toast" role="status" data-wl-toast>Link copied to clipboard</div>
+    </div>
+  </div>
+</div>

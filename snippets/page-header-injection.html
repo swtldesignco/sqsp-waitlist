@@ -1,0 +1,17 @@
+<!-- Waitlist · OPTION A: first section (hero)
+     Page → ⚙ Page Settings → Advanced → Page Header Code Injection.
+     The site header + menu hide while the panel is open. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.css">
+<script>
+  window.WaitlistConfig = {
+    placement: 'hero',          // hero | inline | auto
+    hideHeader: true,           // hide the site header + menu while open
+    lockScroll: true,           // stop page scroll while open
+    intro: true,                // play the square → edges load sequence
+    introTrigger: 'view',       // view = when on screen | load = at page load
+    rotateInterval: 3,          // seconds between rotating words (0 = off)
+    share: 'auto',              // auto | copy | native | off
+    toastText: 'Link copied to clipboard'
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.js"></script>

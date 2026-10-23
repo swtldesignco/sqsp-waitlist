@@ -1,0 +1,18 @@
+<!-- Waitlist · OPTION B: any section (inline), or sitewide
+     Settings → Developer Tools → Code Injection → Footer (sitewide),
+     or a page's Page Header Code Injection (one page).
+     placement 'auto' = hero when the section is first on the page, inline everywhere else. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.css">
+<script>
+  window.WaitlistConfig = {
+    placement: 'auto',          // auto | hero | inline
+    hideHeader: 'auto',         // auto = hide on hero only | true | false
+    scrollIntoView: true,       // inline: bring the section to the top of the screen on open
+    lockScroll: true,
+    intro: true,
+    introTrigger: 'view',
+    rotateInterval: 3,
+    share: 'auto'
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.js"></script>

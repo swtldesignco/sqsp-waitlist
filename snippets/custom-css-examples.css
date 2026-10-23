@@ -1,0 +1,31 @@
+/* ==========================================================================
+   XX. WAITLIST — square-to-panel signup
+   ========================================================================== */
+
+/* XX.1 Colours and glass */
+.wl {
+  --wl-text: #ffffff;                 /* lockup, prompt, CTA, panel text */
+  --wl-muted: rgba(255,255,255,.62);  /* prompt line, success body, share link */
+  --wl-line: rgba(255,255,255,.25);   /* CTA border, beta pill */
+  --wl-tint: rgba(18,18,22,.28);      /* tint over the blurred background */
+  --wl-blur: 25px;                    /* glass blur */
+  --wl-field: #f2f2f7;                /* email pill */
+  --wl-ink: #000000;                  /* input text, submit circle, check */
+  --wl-error: #ff8a80;
+}
+
+/* XX.2 Size */
+.wl {
+  --wl-size: min(360px, calc(100vw - 48px)); /* the square */
+  --wl-margin: 24px;                          /* lockup + X distance from the edge */
+}
+
+/* XX.3 Section height (set on the section so it inherits) */
+.wl-host { --wl-height: 100svh; }            /* hero */
+.wl-host--inline { --wl-inline-height: 90svh; } /* inline, min 560px */
+
+/* XX.4 Optional: light glass for a pale background image */
+/* .wl { --wl-text:#111; --wl-muted:rgba(0,0,0,.6); --wl-line:rgba(0,0,0,.2); --wl-tint:rgba(255,255,255,.35); } */
+
+/* XX.5 Optional: CTA hover colours */
+/* @media (hover:hover){ .wl-cta:hover { background:#d7ff3a; color:#000; } } */

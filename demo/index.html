@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Waitlist demo — mock Squarespace 7.1</title>
+<link rel="stylesheet" href="../src/waitlist.css">
+<style>
+  /* Mock of the 7.1 shell: fixed transparent header, sections with backgrounds */
+  body { margin:0; font:15px/1.4 system-ui, sans-serif; background:#111; color:#fff; }
+  #header { position:fixed; inset:0 0 auto; z-index:10; height:96px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; }
+  #header .logo { font-weight:700; letter-spacing:.08em; }
+  #header .burger { width:28px; height:14px; border-block:2px solid #fff; }
+  .page-section { position:relative; }
+  .section-background { position:absolute; inset:0; z-index:0; }
+  .bg-a { background:radial-gradient(60% 70% at 20% 20%,#3b3f8f,transparent),radial-gradient(50% 60% at 85% 85%,#8a5a2b,transparent),#191b24; }
+  .bg-b { background:radial-gradient(60% 70% at 80% 30%,#1f6f74,transparent),radial-gradient(50% 60% at 15% 85%,#6b2d4f,transparent),#15161c; }
+  .content-wrapper { position:relative; z-index:1; padding:120px 24px; }
+  .filler { background:#f4f4f2; color:#222; } .filler .content-wrapper { max-width:640px; margin:auto; }
+  .demo-note { position:fixed; left:12px; bottom:12px; z-index:20; font:12px ui-monospace,monospace; background:rgba(0,0,0,.6); padding:6px 8px; border-radius:6px; }
+</style></head>
+<body>
+<header id="header"><span class="logo">STUDIO</span><span class="burger" aria-hidden="true"></span></header>
+<main><article class="sections">
+  <section class="page-section"><div class="section-background bg-a"></div>
+    <div class="content-wrapper"><div class="sqs-block code-block"><div class="wl" data-wl>
+  <div class="wl__lockup" aria-hidden="true">
+    <span class="wl__left"><span class="wl__prefix">Welcome to</span>Forma<span class="wl__pill">beta</span></span>
+    <span class="wl__right">A space to build <span class="wl__rot" data-wl-rotate="websites, apps, anything"></span></span>
+  </div>
+
+  <div class="wl__card">
+    <div class="wl__square">
+      <p class="wl__copy" aria-hidden="true" data-wl-words>Build me a website for my local cycling club with a weekly class schedule they can use to sign up</p>
+      <div class="wl__cta-wrap">
+        <button type="button" class="wl-cta" aria-haspopup="dialog" aria-expanded="false" data-wl-open>Join the waitlist</button>
+      </div>
+    </div>
+
+    <div class="wl__panel" role="dialog" aria-modal="true" aria-labelledby="wl-heading">
+      <div class="wl__content">
+        <div class="wl__message">
+          <h2 class="wl__heading" id="wl-heading" style="grid-area:1/1">Get early access</h2>
+          <div class="wl__success" aria-hidden="true">
+            <span class="wl__success-title">You're on the list.</span>
+            <span class="wl__success-body">We'll notify you at <span data-wl-email></span><br>when access opens.</span>
+          </div>
+          <p class="wl-sr" role="status" data-wl-status></p>
+        </div>
+
+        <div class="wl__stage">
+          <form class="wl__field" novalidate data-wl-form>
+            <input class="wl__input" id="wl-email" type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email" maxlength="254">
+            <button type="submit" class="wl__submit" aria-label="Submit">
+              <span class="wl__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg></span>
+              <span class="wl__spin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/></svg></span>
+            </button>
+            <span class="wl__check" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg></span>
+            <span class="wl__error" role="alert" data-wl-error></span>
+          </form>
+          <button type="button" class="wl__share" data-wl-share>
+            <span>Send to a friend</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="wl__back" aria-label="Back" data-wl-back><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+      <button type="button" class="wl__close" aria-label="Close" data-wl-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6l12 12"/></svg></button>
+      <div class="wl__toast" role="status" data-wl-toast>Link copied to clipboard</div>
+    </div>
+  </div>
+</div></div><div class="sqs-block newsletter-block sqs-block-newsletter"><div class="newsletter-form-wrapper">
+  <form class="newsletter-form"><div class="newsletter-form-body"><input type="email" name="email" placeholder="Email Address"><button type="submit" class="newsletter-form-button">Sign Up</button></div></form>
+  <div class="form-submission-text hidden">Thank you!</div></div></div></div></section>
+
+  <section class="page-section filler"><div class="content-wrapper">
+    <h2>Regular content</h2><p>Scroll down. The second waitlist sits in an inline section: the header stays, the page scrolls the section into view, and scroll locks while it is open.</p>
+    <p style="height:60vh"></p></div></section>
+
+  <section class="page-section"><div class="section-background bg-b"></div>
+    <div class="content-wrapper"><div class="sqs-block code-block"><div class="wl" data-wl id="wl-inline">
+  <div class="wl__lockup" aria-hidden="true">
+    <span class="wl__left"><span class="wl__prefix">Join</span>Studio Notes<span class="wl__pill">monthly</span></span>
+    <span class="wl__right">One email about <span class="wl__rot" data-wl-rotate="type, motion, process"></span></span>
+  </div>
+
+  <div class="wl__card">
+    <div class="wl__square">
+      <p class="wl__copy" aria-hidden="true" data-wl-words>A short monthly letter on what the studio is building, with the files and notes behind it</p>
+      <div class="wl__cta-wrap">
+        <button type="button" class="wl-cta" aria-haspopup="dialog" aria-expanded="false" data-wl-open>Subscribe</button>
+      </div>
+    </div>
+
+    <div class="wl__panel" role="dialog" aria-modal="true" aria-labelledby="wl-heading-2">
+      <div class="wl__content">
+        <div class="wl__message">
+          <h2 class="wl__heading" id="wl-heading-2" style="grid-area:1/1">Get the monthly letter</h2>
+          <div class="wl__success" aria-hidden="true">
+            <span class="wl__success-title">You're on the list.</span>
+            <span class="wl__success-body">We'll notify you at <span data-wl-email></span><br>when access opens.</span>
+          </div>
+          <p class="wl-sr" role="status" data-wl-status></p>
+        </div>
+
+        <div class="wl__stage">
+          <form class="wl__field" novalidate data-wl-form>
+            <input class="wl__input" id="wl-email-2" type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email" maxlength="254">
+            <button type="submit" class="wl__submit" aria-label="Submit">
+              <span class="wl__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg></span>
+              <span class="wl__spin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/></svg></span>
+            </button>
+            <span class="wl__check" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg></span>
+            <span class="wl__error" role="alert" data-wl-error></span>
+          </form>
+          <button type="button" class="wl__share" data-wl-share>
+            <span>Send to a friend</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="wl__back" aria-label="Back" data-wl-back><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+      <button type="button" class="wl__close" aria-label="Close" data-wl-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6l12 12"/></svg></button>
+      <div class="wl__toast" role="status" data-wl-toast>Link copied to clipboard</div>
+    </div>
+  </div>
+</div></div><div class="sqs-block newsletter-block sqs-block-newsletter"><div class="newsletter-form-wrapper">
+  <form class="newsletter-form"><div class="newsletter-form-body"><input type="email" name="email" placeholder="Email Address"><button type="submit" class="newsletter-form-button">Sign Up</button></div></form>
+  <div class="form-submission-text hidden">Thank you!</div></div></div></div></section>
+
+  <section class="page-section filler"><div class="content-wrapper"><p style="height:40vh">Footer area</p></div></section>
+</article></main>
+<div class="demo-note">mock 7.1 · fake newsletter answers in 0.6s</div>
+<script>
+  /* Fake native Newsletter Block: answers like Squarespace's */
+  document.querySelectorAll('.newsletter-form').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      setTimeout(function () {
+        f.querySelector('.newsletter-form-body').classList.add('hidden');
+        f.parentElement.querySelector('.form-submission-text').classList.remove('hidden');
+      }, 600);
+    });
+  });
+</script>
+<script src="../src/waitlist.js"></script>
+</body></html>
