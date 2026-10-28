@@ -1,7 +1,7 @@
 # Waitlist
 
 Forma-style waitlist signup for Squarespace 7.1, built on a native Newsletter Block.
-Repo: <https://github.com/zsawtelle-lgtm/sqsp-waitlist> · Version **1.0.0** · Status: **beta: tested on swtldesignco staging + mock 7.1 page**
+Repo: <https://github.com/swtldesignco/sqsp-waitlist> · Version **1.0.0** · Status: **beta: tested on swtldesignco staging + mock 7.1 page**
 
 ---
 
@@ -65,7 +65,7 @@ That page → ⚙ Page Settings → Advanced → **Page Header Code Injection**.
 [`snippets/page-header-injection.html`](../snippets/page-header-injection.html):
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.css">
 <script>
   window.WaitlistConfig = {
     placement: 'hero',
@@ -78,7 +78,7 @@ That page → ⚙ Page Settings → Advanced → **Page Header Code Injection**.
     toastText: 'Link copied to clipboard'
   };
 </script>
-<script defer src="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.js"></script>
 ```
 
 Why page injection: hiding the header is a page-level choice. Keep it on the page that
@@ -91,7 +91,7 @@ Header Code Injection for one page. Paste
 [`snippets/footer-injection.html`](../snippets/footer-injection.html):
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.css">
 <script>
   window.WaitlistConfig = {
     placement: 'auto',
@@ -104,7 +104,7 @@ Header Code Injection for one page. Paste
     share: 'auto'
   };
 </script>
-<script defer src="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.js"></script>
 ```
 
 With `introTrigger: 'view'`, an inline section plays its intro when it scrolls into view.

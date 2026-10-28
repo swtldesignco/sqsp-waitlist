@@ -17,8 +17,8 @@ See **[docs/INSTALL.md](docs/INSTALL.md)**. Local demo: `npx serve .` → `/demo
 
 ## CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.css">
-<script defer src="https://cdn.jsdelivr.net/gh/zsawtelle-lgtm/sqsp-waitlist@1/src/waitlist.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.css">
+<script defer src="https://cdn.jsdelivr.net/gh/swtldesignco/sqsp-waitlist@1/src/waitlist.js"></script>
 ```
 `@1` needs a `v1.x.x` tag on the repo. Never use `@latest`.
 

@@ -13,7 +13,7 @@
  *            locks scroll while open; the header stays.
  *   auto   — hero if the section is first on the page, otherwise inline.
  *
- * Repo: github.com/zsawtelle-lgtm/sqsp-waitlist
+ * Repo: github.com/swtldesignco/sqsp-waitlist
  */
 (function () {
   'use strict';
